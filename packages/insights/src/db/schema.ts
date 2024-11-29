@@ -73,18 +73,12 @@ export const manifestTable = sqliteTable(
     timestamp: integer('timestamp', { mode: 'timestamp_ms' }).notNull(),
   },
   (table) => ({
-    publicApiKeyHashIndex: index('idx_manifests_apiKey_hash').on(
-      table.hash,
-      table.publicApiKey
-    ),
+    publicApiKeyHashIndex: index('idx_manifests_apiKey_hash').on(table.hash, table.publicApiKey),
     publicApiKeyHashIndex_2: index('idx_manifests_apiKey_hash_2').on(
       table.publicApiKey,
       table.hash
     ),
-    apiTimestamp: index('idx_manifest_api_timestamp').on(
-      table.publicApiKey,
-      table.timestamp
-    ),
+    apiTimestamp: index('idx_manifest_api_timestamp').on(table.publicApiKey, table.timestamp),
     publicApiKeyIndex: index('idx_manifests_public_apiKey').on(table.publicApiKey),
     hashIndex: index('idx_manifests_hash').on(table.hash),
   })
