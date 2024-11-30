@@ -1,5 +1,12 @@
 # @qwik.dev/react
 
+## 2.0.0-alpha.2
+
+### Patch Changes
+
+- Updated dependencies [[`f3cad07`](https://github.com/QwikDev/qwik/commit/f3cad07f544a9406e6bae5851aafe4624e115ead)]:
+  - @qwik.dev/core@2.0.0-alpha.2
+
 ## 2.0.0-alpha.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @qwik.dev/core
 
+## 2.0.0-alpha.2
+
+### Patch Changes
+
+- 🐞🩹 serialization of an array of refs (by [@Varixo](https://github.com/Varixo) in [#7106](https://github.com/QwikDev/qwik/pull/7106))
+
 ## 2.0.0-alpha.1
 
 ### Patch Changes
