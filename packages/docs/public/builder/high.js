@@ -61,9 +61,14 @@ interactiveScroller.scrollLeft += interactiveScroller.children[1].clientWidth;
       console.warn('Builder code error', err);
     }
  };export const ComponentB417246B77124735ADE3A2694CB86BF9_onClick_0=(event)=>{
-    try { navigator.clipboard.writeText(`npm create qwik@latest`);
-event.target.innerText = "Copied to Clipboard";
-setTimeout(() => (event.target.innerText = "npm create qwik@latest"), 2000);
+    try {
+      let text = event.target.innerText
+      if(!text){
+         text = "npm create qwik@latest"
+      }
+      navigator.clipboard.writeText(text);
+      event.target.innerText = "Copied to Clipboard";
+      setTimeout(() => (event.target.innerText = text), 2000);
  }
     catch (err) {
       console.warn('Builder code error', err);
